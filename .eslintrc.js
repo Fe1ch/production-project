@@ -43,6 +43,11 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'react/self-closing-comp': 'off',
+        // 'no-unused-vars': 'off',
+        // '@typescript-eslint/no-unused-vars': [
+        //     'error',
+        //     { argsIgnorePattern: '^_' },
+        // ],
         'i18next/no-literal-string': [
             'error',
             {
@@ -56,9 +61,11 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
+        'no-undef': 'off',
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
     },
     overrides: [
         {
