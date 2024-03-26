@@ -33,7 +33,7 @@ module.exports = {
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+        // 'no-unused-vars': 'warn',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
@@ -43,11 +43,11 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'react/self-closing-comp': 'off',
-        // 'no-unused-vars': 'off',
-        // '@typescript-eslint/no-unused-vars': [
-        //     'error',
-        //     { argsIgnorePattern: '^_' },
-        // ],
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            { argsIgnorePattern: '^_' },
+        ],
         'i18next/no-literal-string': [
             'error',
             {
