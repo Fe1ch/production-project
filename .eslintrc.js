@@ -43,9 +43,9 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'react/self-closing-comp': 'off',
-        'no-unused-vars': 'off',
+        'no-unused-vars': 'warn',
         '@typescript-eslint/no-unused-vars': [
-            'error',
+            'warn',
             { argsIgnorePattern: '^_' },
         ],
         'i18next/no-literal-string': [
@@ -66,6 +66,7 @@ module.exports = {
     globals: {
         __IS_DEV__: true,
         __API__: true,
+        __PROJECT__: true,
     },
     overrides: [
         {
