@@ -7,10 +7,10 @@ import cls from './ArticleList.module.scss';
 import { Article, ArticleView } from '../../model/types/article';
 
 interface ArticleListProps {
-    className?: string;
-    articles: Article[]
-    isLoading?: boolean;
-    view?: ArticleView;
+  className?: string;
+  articles: Article[];
+  isLoading?: boolean;
+  view?: ArticleView;
 }
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
@@ -50,6 +50,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
             {articles.length > 0
                 ? articles.map(renderArticle)
                 : null}
+            {isLoading && getSkeletons(view)}
         </div>
     );
 });
