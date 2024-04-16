@@ -41,10 +41,14 @@ export const ProfileCard = (props: ProfileCardProps) => {
         onChangeCountry,
         onChangeCurrency,
     } = props;
-    const { t } = useTranslation();
+    const { t } = useTranslation('profile');
     if (isLoading) {
         return (
-            <div className={classNames(cls.ProfileCard, { [cls.loading]: true }, [className])}>
+            <div
+                className={classNames(cls.ProfileCard, { [cls.loading]: true }, [
+                    className,
+                ])}
+            >
                 <Loader />
             </div>
         );
